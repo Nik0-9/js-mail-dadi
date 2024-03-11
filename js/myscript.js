@@ -30,8 +30,13 @@ btn.addEventListener('click', function(){
             result.innerHTML = 'Questo utente è nella lista'
         } else{
             result.innerHTML = `Questo utente NON è nella lista`
-
      }
+});
+
+let btnReset = document.getElementById('reset');
+
+btnReset.addEventListener('click', function(){
+    document.getElementById('mailValue').value = '';
 });
 
 /*
@@ -52,8 +57,6 @@ btnDadi.addEventListener('click', function(){
     let pcNum = getRndInteger(1,6);
     let userNum = getRndInteger(1,6);
     if(pcNum === userNum){
-        //pcDice = pcNum;
-        //userDice = userNum;
         pcDice.innerHTML = `<img src="img/dadi/${pcNum}.svg" alt="${pcNum}" class="img-fluid ">`;
         userDice.innerHTML = `<img src="img/dadi/${userNum}.svg" alt="${userNum}" class="img-fluid ">`;
         winner.innerHTML = `In caso di parità il banco vince sempre`;
