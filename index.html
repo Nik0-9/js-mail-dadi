@@ -12,17 +12,38 @@
 
 <body>
     <div class="container my-3">
-        <div class="card px-2 py-2">
+        <div class="card d-flex px-2 py-2 mb-3">
+            <h1 class="text-center ">Controlla la tua mail</h1>
             <div>
                 <label for="mailValue" class="form-label">
                     Inserire la email da controllare:
                 </label>
-                <input type="email" class="form-control w-50 " value="" id="mailValue">
+                <input type="email" class="form-control w-50" placeholder="Inserisci la tua mail" value="" id="mailValue">
                 <button class="btn btn-primary mt-2" id="control">Controlla</button>
             </div>
             <div class="result">
             </div>
+        </div>
+        <div class="card px-2 py-2">
+            <h1 class="text-center">Gioco dei dadi</h1>
+            <div>
+                <button class="btn btn-danger mb-3" id="btnDadi">Tira i dadi</button>
+            </div>
+            <div class="d-flex">
+                <div class="w-50 ">Lancio del Banco
+                    <div id="pcDice">
+                        
+                    </div>
+                </div>
 
+                <div class="w-50 ">Lancio dell' utente
+                    <div id="userDice">
+                        
+                    </div>
+                </div>
+            </div>
+            <div id="winner" class="text-center my-3">
+            </div>
         </div>
     </div>
 
